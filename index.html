@@ -3,12 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>装好鱼和熏鸭的婚礼预告</title>
-    <link rel="shortcut icon" href="TemplateData/title_256.ico">
+    <title>Unity WebGL Player | Wedding Intro</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="wx_logo" style="margin:0 auto;display:none;"><img src="TemplateData/title_300.jpg"/></div>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=856 height=1438></canvas>
       <div id="unity-loading-bar">
@@ -66,7 +65,7 @@
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Haoyu&Jia Game Co.",
         productName: "Wedding Intro",
-        productVersion: "0.3.8",
+        productVersion: "1.0.0",
         showBanner: unityShowBanner,
       };
 
@@ -82,7 +81,7 @@
         // Avoid draining fillrate performance on mobile devices,
         // and default/override low DPI mode on mobile browsers.
         config.devicePixelRatio = 1;
-        // unityShowBanner('WebGL builds are not supported on mobile devices.');
+        unityShowBanner('WebGL builds are not supported on mobile devices.');
       } else {
         canvas.style.width = "856px";
         canvas.style.height = "1438px";
